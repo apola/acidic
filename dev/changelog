@@ -1,0 +1,14 @@
+0.1
+first working version, interprets ACIDIC programs
+has -1 -c -h -v command line options
+has many bugs
+
+0.2
+--- changed:
+turned the interpreter into a class to ease usage/get rid of the myriad globals
+--- added:
+-A -B -e -S -C command line options
+long versions of existing command line options
+--- bugs:
+-S and -C still require a file to be specified, even if both options are supplied
+-e will accept int values larger than the length of the command stack
